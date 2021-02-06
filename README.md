@@ -83,6 +83,22 @@ app.get("/cdn/:File", (req, res) => {
 });
 ```
 
+### Limiting file size:
+
+ It is also possible to limit the size of files received by entering a new parameter:<br>
+```js
+maxFileSize: X * 1024 * 1024
+```
+ `X` represents a number that will be the maximum amount of MB. For example, if it is 30, the limit is 30 MB.<br>
+ If the file is bigger, it will return an error, so you will have to check.<br>
+
+```js
+if(err){
+   res.send("The file is too big, try to send a smaller one.")
+   return
+}
+```
+
  These codes in action:<br>
 
 ![](https://host.cloudyyuw.repl.co/i/e6ec7f963380809994eadb5d439f0abe.gif)
