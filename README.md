@@ -18,7 +18,7 @@ A simple way to make a CDN
 ```
 <br>
  Now we can go to the server side.<br>
- You can use another library, I will use `express` because it is my preference.<br>
+ You can use another library, I will use express because it is my preference.<br>
  Just a simple code, for the routes, we won't focus on them too much.<br>
 
 ```js
